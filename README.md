@@ -1,16 +1,16 @@
-# 🅰️ Angular Entorns Client — Curs 0612
+# 🅰️ Angular Entornos Cliente — Curso 0612
 
-Repositori de curs per al mòdul **0612 Desenvolupament web en entorn client** (DAW2).
+Repositorio del curso para el módulo **0612 Desarrollo web en entorno cliente** (DAW2).
 
 ---
 
-## 📋 Com usar aquest repositori
+## 📋 Cómo usar este repositorio
 
-### 1. Fes fork d'aquest repositori
+### 1. Haz un fork de este repositorio
 
-Ves a la cantonada superior dreta i clica **Fork**. Treballa sempre al **teu fork** — mai en aquest repositori.
+Ve a la esquina superior derecha y haz clic en **Fork**. Trabaja siempre en **tu fork**, nunca en este repositorio.
 
-### 2. Clona el teu fork en local
+### 2. Clona tu fork en local
 
 ```bash
 git clone https://github.com/EL-TEU-USUARI/AngularEntornsCurs.git
@@ -19,81 +19,81 @@ npm install
 ng serve
 ```
 
-### 3. Consulta les branques de livecoding
+### 3. Consulta las ramas de livecoding
 
-Cada sessió té una branca amb el codi fet en directe a classe:
+Cada sesión tiene una rama con el código realizado en directo en clase:
 
-| Branca | Contingut |
+| Rama | Contenido |
 |--------|-----------|
-| `lc/01-entorn-cli` | ng new, estructura de fitxers |
-| `lc/02-typescript-base` | Tipus, interfícies, classes |
-| `lc/03-components` | Crear i usar components |
-| `lc/04-interpolacio-dades` | Mostrar dades del TS al HTML |
+| `lc/01-entorn-cli` | ng new, estructura de archivos |
+| `lc/02-typescript-base` | Tipos, interfaces, clases |
+| `lc/03-components` | Crear y usar componentes |
+| `lc/04-interpolacio-dades` | Mostrar datos del TS en el HTML |
 | `lc/05-control-flow-for` | @for i track |
 | `lc/06-control-flow-if` | @if i @else |
 | `lc/07-property-binding` | [ ] Property Binding |
 | `lc/08-event-binding` | ( ) Event Binding |
 | `lc/09-inputs-outputs` | input<>() i output<>() |
-| `lc/10-routes` | Routing bàsic |
-| `lc/11-routes-dinamiques` | Paràmetres de ruta + ngClass |
-| `lc/12-reactive-forms` | FormGroup i FormControl |
-| `lc/13-validadors` | Validators + missatges error |
-| `lc/14-services` | Services + inject() |
+| `lc/10-routes` | Routing básico |
+| `lc/11-routes-dinamiques` | Parámetros de ruta + ngClass |
+| `lc/12-reactive-forms` | FormGroup y FormControl |
+| `lc/13-validadors` | Validadores + mensajes de error |
+| `lc/14-services` | Servicios + inject() |
 | `lc/15-http-client` | HttpClient + observables |
-| `lc/16-rxjs-behaviorsubject` | BehaviorSubject + estat compartit |
+| `lc/16-rxjs-behaviorsubject` | BehaviorSubject + estado compartido |
 | `lc/17-jwt-guards` | JWT + HttpInterceptor + AuthGuard |
 
-> Si t'encalles en un repte, mira la branca de la sessió corresponent.
+> Si te atascas en un reto, consulta la rama de la sesión correspondiente.
 
-### 4. Entrega cada repte com a Pull Request
+### 4. Entrega cada reto mediante un Pull Request
 
-1. Fes els canvis al teu fork (`main` o una branca pròpia)
-2. Fes commit: `git commit -m "repte-s03: TarjetaComponent creat"`
-3. Obre un **Pull Request** al teu fork (base: `main`)
-4. Posa a la descripció del PR: **què has fet** i **on has tingut dubtes**
+1. Haz los cambios en tu fork (`main` o una rama propia)
+2. Haz commit: `git commit -m "repte-s03: TarjetaComponent creat"`
+3. Abre un **Pull Request** en tu fork (base: `main`)
+4. Indica en la descripción del PR: **qué has hecho** y **dónde has tenido dudas**
 
 ---
 
-## 🗂️ Estructura del projecte
+## 🗂️ Estructura del proyecto
 
 ```
 src/
   app/
-    components/       ← els teus components
-    services/         ← els teus services (a partir d'AEA2)
-    interfaces/       ← interfícies TypeScript
-    pages/            ← pàgines/vistes (a partir de routes)
+    components/       ← tus componentes
+    services/         ← tus servicios (a partir de AEA2)
+    interfaces/       ← interfaces TypeScript
+    pages/            ← páginas/vistas (a partir de las rutas)
   assets/
 ```
 
 ---
 
-## 📅 Planificació resumida
+## 📅 Planificación resumida
 
-| AEA | Hores | Continguts principals | Instrument |
+| AEA | Horas | Contenidos principales | Instrumento |
 |-----|-------|-----------------------|------------|
 | AEA1 | 30h | Angular CLI, TypeScript base, Components, @for/@if, Bindings, Events, Input/Output | Pt1 + Pv1 |
 | AEA2 | 25h | Routes, Reactive Forms, Services, HttpClient, RxJS, JWT + Guards | Pt2 + Pv2 |
-| AEA3 | 44h | Repte (nivells 1–5): app completa amb Laravel + Angular + Docker | Pt3/Rt + Pv3 |
+| AEA3 | 44h | Reto (niveles 1–5): aplicación completa con Laravel + Angular + Docker | Pt3/Rt + Pv3 |
 
 ---
 
-## 📚 Recursos de referència
+## 📚 Recursos de referencia
 
-- [Repositori d'exemples Angular](https://github.com/fmartinez-dev-learn/AngularSamples) — exemples per tema, per consultar
-- [Documentació oficial Angular](https://angular.dev)
+- [Repositorio de ejemplos de Angular](https://github.com/fmartinez-dev-learn/AngularSamples) — ejemplos por tema, para consultar
+- [Documentación oficial de Angular](https://angular.dev)
 
 ---
 
 ## ⚙️ Versions
 
 - **Node.js**: 20.x
-- **Angular CLI**: última versió estable (`npm install -g @angular/cli`)
+- **Angular CLI**: última versión estable (`npm install -g @angular/cli`)
 
 ---
 
-## ✅ GitHub Actions — comprovació automàtica
+## ✅ GitHub Actions — comprobación automática
 
-Cada vegada que fas `push`, s'executa automàticament `ng build`. 
-Veuràs ✅ o ❌ a la pestanya **Actions** del teu fork. 
-Si surt ❌, mira el log d'errors.
+Cada vez que haces `push`, se ejecuta automáticamente `ng build`.
+Verás ✅ o ❌ en la pestaña **Actions** de tu fork.
+Si aparece ❌, revisa el registro de errores.
