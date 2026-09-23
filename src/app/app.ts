@@ -2,7 +2,7 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 /* Mis Importes */
 import { Producte } from './interfaces/producte';
-import { Minecraft } from './clases/minecraft';
+import { Minecraft } from './interfaces/minecraft';
 
 @Component({
   selector: 'app-root',
@@ -59,12 +59,33 @@ export class App {
 
   //------------------------------------------------------------------------------------------//
   
-  ServerMC: Minecraft[] = [
-      new Minecraft('Overworld', 13598998747025, '26.3', true, 'Servidor Santomiau'),
-      new Minecraft('Nether', 13598998747025, '26.3', true),
-      new Minecraft('End', 13598998747025, '26.3', true),
-      new Minecraft('Aether', 10000000001, '1.8', false, 'La traicion'),
-      new Minecraft('Twilight Forest', 26569, '1.5', false, 'Locura de Mod')
-    ]
+  // Part B: Dades mock i funcions
+  // Un array de mínim 5 elements del teu tema que compleixi la interfície
+  MCmaps: Minecraft[] = [
+    {id: 1, NomMundo: 'Overworld', Seed: 12345, Version: '26.3', Multiplayer: true, DescMundo: 'Mundo principal'},
+    {id: 2, NomMundo: 'Nether', Seed: 67890, Version: '26.3', Multiplayer: true},
+    {id: 3, NomMundo: 'End', Seed: 54321, Version: '26.3', Multiplayer: true},
+    {id: 4, NomMundo: 'Aether', Seed: 98765, Version: '1.4', Multiplayer: false, DescMundo: 'El cielo de la Traicion'},
+    {id: 5, NomMundo: 'Twilight Forest', Seed: 24680, Version: '1.8', Multiplayer: false, DescMundo: 'Bosque encantado'}
+  ]
+ 
+  // Una funció getActius() (o similar) que retorni els elements amb boolean = true
+  // "x" es una variable temporal
+  // "=>" es una función flecha (arrow function), devuelve el resultado de la expresión a la derecha. (esta en Java tambien "->")
 
+  getMultiplayerWorlds (worlds: Minecraft[]) {
+    return worlds.filter(x => x.Multiplayer == true);
+  }
+
+  // Una funció findById(id: number) que retorni un element o undefined
+  findWorldById (worldID: number): Minecraft | undefined {
+    return this.MCmaps.find(x => x.id === worldID);
+  }
+
+  // Una funció formatarElement(element) que retorni un string amb informació de l'element
+  formatElement(world: Minecraft) {
+    return 'Nombre Mundo: ' + world.NomMundo + ' | Seed: ' + world.Seed + ' | Version: ' + world.Version +
+    ' |  Multijugador: ' + world.Multiplayer + ' | Descripcion: ' + world.DescMundo; 
+  }
 }
+
