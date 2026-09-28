@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 /* Mis Importes */
 import { Producte } from './interfaces/producte';
 import { Minecraft } from './interfaces/minecraft';
+import { Funciones } from './funciones/funciones';
 
 @Component({
   selector: 'app-root',
