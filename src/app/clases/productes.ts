@@ -17,6 +17,14 @@ export class Productes {
         return this.preu * 1.21;
     }
     
+    getnom() {
+        return this.nom
+    }
+
+    getpreu() {
+        return this.preu
+    }
+
 }
 
 //1. AFEGIU UN MÈTODE A LA CLASSE PRODUCTE descripcio() que retorni un string amb nom i preu
