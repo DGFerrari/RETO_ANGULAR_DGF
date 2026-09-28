@@ -4,6 +4,8 @@ import { RouterOutlet } from '@angular/router';
 import { Producte } from './interfaces/producte';
 import { Minecraft } from './interfaces/minecraft';
 import { Funciones } from './funciones/funciones';
+import { Alumnos } from './clases/alumno';
+
 
 @Component({
   selector: 'app-root',
@@ -88,5 +90,19 @@ export class App {
     return 'Nombre Mundo: ' + world.NomMundo + ' | Seed: ' + world.Seed + ' | Version: ' + world.Version +
     ' |  Multijugador: ' + world.Multiplayer + ' | Descripcion: ' + world.DescMundo; 
   }
+
+   //------------------------------------------------------------------------------------------//
+  
+   // Alumnes
+
+  Alberto: Alumnos = new Alumnos('Alberto', 19, 'DAW', [2, 8, 9]);
+  Armenio: Alumnos = new Alumnos('Armenio', 12, 'ESO', [2, 1, 4]);
+
+  // Comprovaciones
+
+constructor() {
+  console.log(this.Alberto.presentar());
+  console.log(this.Armenio.getMediaNotas());
 }
 
+}
