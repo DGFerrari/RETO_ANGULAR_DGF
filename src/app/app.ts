@@ -5,11 +5,14 @@ import { Producte } from './interfaces/producte';
 import { Minecraft } from './interfaces/minecraft';
 import { Funciones } from './funciones/funciones';
 import { Alumnos } from './clases/alumno';
+/* FLOR */
+import { Tarjeta } from './components/tarjeta/tarjeta';
+import { Perfil } from './components/perfil/perfil';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Tarjeta, Perfil],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
