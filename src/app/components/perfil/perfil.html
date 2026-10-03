@@ -1,5 +1,8 @@
 <div class="perfil">
-    <p> Nombre: Daniel Guedes Ferrari </p>
-    <p> Edad: 19 </p>
+    <p> Nombre: {{nombre + ' ' + apellidos}} ({{getIniciales()}})</p>
+    <p> Edad: {{edad}} -> {{edad >= 18 ? 'Es Mayor de edad' : 'Es Menor de edad'}} </p>
+    <p> Generacion: {{ getGeneracio() }}</p>
+    <p> Nacido en {{2026 - edad}}</p>
+    <p> Cliclo: {{ciclo}}</p>
     <p> Tecnico en Microinformatica y redes locales </p>
 </div>
