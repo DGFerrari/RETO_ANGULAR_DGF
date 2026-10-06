@@ -1,8 +1,12 @@
 <!-- Este archivo contiene la vista: estructura HTML y bindings {{}} -->
 
 <p>TARJETA WORKS!</p>
+
+<!-- FOR EN HTML-->
+@for (istok of istok; track istok) {
 <div class="tarjeta">
-    <h2> Ordinador gamer pro </h2>
-    <p> Preu : 1299€ </p>
-    <p> Disponible </p>
+    <h2> {{istok.nom}} </h2>
+    <p> Preu : {{istok.preu}}€ </p>
+    <p> Disponible : {{istok.disponibles ? 'Sí' : 'No'}} </p>
 </div>
+}

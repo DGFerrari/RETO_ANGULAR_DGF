@@ -49,7 +49,7 @@ export class App {
   }
 
   // Array de Objetos de tipo Producto
-  stok: Producte[] = [ {id: 1, nom: 'PC', preu: 20, disponibles: true},
+  stok: Producte[] = [ {id: 1, nom: 'PC', preu: 20, disponibles: true, descripcion: 'Ordenador de Sobre mesa'},
                     {id: 2, nom: 'Portatil', preu: 30, disponibles: false},
                     {id: 3, nom: 'Tablet', preu: 40, disponibles: true}
   ];

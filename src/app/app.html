@@ -1,6 +1,34 @@
 <h2>Mi Catalogo</h2>
+
+<!-- SIN FOR -->
 <app-tarjeta></app-tarjeta>
+<br>
 <app-perfil></app-perfil>
 <app-perfil></app-perfil>
+
+
+<!-- CON FOR en HTML! -->
+
+<!-- For que recorre un array-->
+@for (stok of stok; track stok) {
+    <p> {{stok.nom}} </p>
+}
+
+<!-- Numero de Posicion del Array en el Flor -->
+@for (stok of stok; track stok; let i = $index) {
+    <p> {{i + 1}}. {{stok.descripcion}} </p>  
+    
+<!-- Si no existe o no se pasa nada, devuelve esto por si acaso -->
+} @empty { 
+    <p>No se econtro!</p>
+}
+
+<h1> Mundos Minecraft </h1>
+
+@for (MCmaps of MCmaps; track MCmaps; let i = $index) {
+    <h2>{{i + 1}}. {{ MCmaps.NomMundo }}</h2>
+    <p>Seed: {{MCmaps.Seed}} | Version: {{MCmaps.Version}}</p>
+    <p>{{MCmaps.DescMundo}}</p>
+}
 
 <router-outlet/>
