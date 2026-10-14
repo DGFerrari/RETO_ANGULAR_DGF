@@ -8,11 +8,11 @@ import { Alumnos } from './clases/alumno';
 /* FLOR */
 import { Tarjeta } from './components/tarjeta/tarjeta';
 import { Perfil } from './components/perfil/perfil';
-
+import { Info } from './components/info/info';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Tarjeta, Perfil],
+  imports: [RouterOutlet, Tarjeta, Perfil, Info],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
