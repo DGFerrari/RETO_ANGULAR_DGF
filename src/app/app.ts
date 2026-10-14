@@ -2,6 +2,7 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 /* Mis Importes */
 import { Producte } from './interfaces/producte';
+import { Producte2 } from './interfaces/producte2';
 import { Minecraft } from './interfaces/minecraft';
 import { Funciones } from './funciones/funciones';
 import { Alumnos } from './clases/alumno';
@@ -107,5 +108,13 @@ constructor() {
   console.log(this.Alberto.presentar());
   console.log(this.Armenio.getMediaNotas());
 }
+
+// P R O D U C T E S 2
+
+telefonos: Producte2[] = [
+  {id: 1, nom: 'iPhone', preu: 1000, estoc: 10, categoria: 'Electrònica', descripcion: 'Telèfon mòbil d\'alta gama'},
+  {id: 2, nom: 'Samsung Galaxy', preu: 50, estoc: 15, categoria: 'Electrònica', descripcion: 'Telèfon mòbil de mitjana gama'},
+  {id: 3, nom: 'Google Pixel', preu: 0, estoc: 20, categoria: 'Electrònica', descripcion: 'Telèfon mòbil de baixa gama'}
+]
 
 }

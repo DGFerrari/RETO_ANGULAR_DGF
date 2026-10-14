@@ -1,6 +1,6 @@
 // Esto es para aprender ifs, creo...
 
-export interface Producte {
+export interface Producte2 {
     id: number;
     nom: string;
     preu: number;
@@ -21,6 +21,8 @@ Permet incrustar expressions TS dins de 1'HTML, angular avalaua l'expressio i mo
 
 amb {{nom}} -- > el valor por canviar i l'HTML s'actualitzarà automaticament. Hardcoded és x sempre es estatic.
 */
+
+// Es esto de abajo
 
 /*
 AGEFIR ETIQUETA OFERTA I GRATUÏT

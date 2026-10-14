@@ -1,0 +1,35 @@
+.producte {
+    margin-block: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.etiqueta,
+.destacat {
+    display: inline-block;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 700;
+}
+
+.oferta {
+    background-color: #fff3cd;
+    color: #664d03;
+}
+
+.gratuit {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.premium {
+    background-color: #cfe2ff;
+    color: #084298;
+}
+
+.destacat {
+    background-color: #f8d7da;
+    color: #842029;
+}

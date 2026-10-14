@@ -34,6 +34,27 @@
     <p>{{MCmaps.DescMundo}}</p>
 }
 
+<h1>Telèfons</h1>
+
+@for (telefon of telefonos; track telefon.id) {
+    <div class="producte">
+        <h2>{{telefon.nom}}</h2>
+        <p>{{telefon.descripcion}}</p>
+        <p>Preu: {{telefon.preu}} €</p>
+
+        @if (telefon.preu === 0) {
+            <span class="etiqueta gratuit">Gratuït</span>
+        } @else if (telefon.preu < 20) {
+            <span class="etiqueta oferta">Oferta</span>
+        } @else if (telefon.preu > 100) {
+            <span class="etiqueta premium">Premium</span>
+        }
+
+        @if (telefon.categoria.toLowerCase() === 'informatica') {
+            <div class="destacat">Destacat</div>
+        }
+    </div>
+}
 
 
 <router-outlet/>
