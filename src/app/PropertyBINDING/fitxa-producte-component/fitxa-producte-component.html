@@ -1,0 +1,7 @@
+<!-- 3. Usa [disabled]="afegitAlCarret || !teEstoc" al botó. -->
+<!-- 4. Afegeix (click)="afegir()" al botó (avançament de S08: de moment, copieu la línia). -->
+
+<button [disabled]="afegitAlCarret || !teEstoc" (click)="afegir()"> Afegeix al Carret </button>
+
+<!-- 5. Usa [class.confirmat]="afegitAlCarret" a l'<article>, al costat del [class] que ja hi ha. -->
+<article class="confirmat " [class.confirmat]="afegitAlCarret">HOLA</article>

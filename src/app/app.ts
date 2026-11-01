@@ -10,10 +10,11 @@ import { Alumnos } from './clases/alumno';
 import { Tarjeta } from './components/tarjeta/tarjeta';
 import { Perfil } from './components/perfil/perfil';
 import { Info } from './components/info/info';
+import { FitxaProducteComponent } from './PropertyBINDING/fitxa-producte-component/fitxa-producte-component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Tarjeta, Perfil, Info],
+  imports: [RouterOutlet, Tarjeta, Perfil, Info, FitxaProducteComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
