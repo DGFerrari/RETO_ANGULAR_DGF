@@ -4,4 +4,6 @@
 <button [disabled]="afegitAlCarret || !teEstoc" (click)="afegir()"> Afegeix al Carret </button>
 
 <!-- 5. Usa [class.confirmat]="afegitAlCarret" a l'<article>, al costat del [class] que ja hi ha. -->
-<article class="confirmat " [class.confirmat]="afegitAlCarret">HOLA</article>
+<article [class.confirmat]="afegitAlCarret">
+    {{ afegitAlCarret ? 'si' : 'no' }}
+</article>

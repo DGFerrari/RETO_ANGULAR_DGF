@@ -10,17 +10,12 @@ export class FitxaProducteComponent {
 
   // 1. Afegeix afegitAlCarret = false a FitxaProducteComponent.
   afegitAlCarret: boolean = false;
-
   teEstoc = true;
 
   //2. Crea el mètode afegir(): void que posa afegitAlCarret = true.
   afegir(): void {
     this.afegitAlCarret = true;
+    
   }
-
-  
-
-  //
-
-  
+ 
 }
